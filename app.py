@@ -34,3 +34,6 @@ except:
 	
 if __name__ == '__main__':
     app.run(host=app.config['HOST'], port=app.config['PORT'])
+
+def rest_request_example():
+    print (requests.get("http://140.86.15.104:3000/shield/33/45/yellow/gregoryReneCorail").text) 
